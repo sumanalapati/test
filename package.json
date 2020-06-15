@@ -14,8 +14,8 @@
   "author": "George Tsopouridis gtsopour@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^3.5.0",
-    "cpx": "^1.5.0",
-    "nodemon": "^1.12.1"
+    "concurrently": "*",
+    "cpx": "*",
+    "nodemon": "*"
   }
 }

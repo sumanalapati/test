@@ -7,8 +7,10 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var ddn = require('./routes/ddn');
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +30,8 @@ if (app.get("env") === "production") {
 
 app.use('/api/', index);
 app.use('/api/users', users);
+
+app.use('/api/ddn', ddn);
 
 app.use('*', function(req, res) {
     res.sendfile(path.join(__dirname, '../client/index.html'));
