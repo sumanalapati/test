@@ -1,6 +1,7 @@
-<mat-toolbar>
+<mat-toolbar [classList]="'mat-toolbar mat-toolbar-single-row'">
   <span> Door Number Converter</span>
 </mat-toolbar>
+<div style="padding-top: 20px;">
 <form [formGroup]="myForm" (ngSubmit)="submitForm()" novalidate>
   <mat-form-field>
     <input matInput placeholder="EDN" formControlName="edn">
@@ -33,5 +34,6 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+</div>
 </div>
 <router-outlet></router-outlet>
