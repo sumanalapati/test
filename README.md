@@ -1,7 +1,17 @@
 # NodeJS Express (server) with Angular CLI (client), Excel Reader 
 
+# Prequisites
+```bash
+    Make sure your development environment includes Node.js® and an npm package manager.
+    
+    This App requires a current, active LTS, or maintenance LTS version of Node.js. See the engines key for the specific version requirements in our package.json.
+    
+    To check your version, run node -v in a terminal/console window.
+    
+    To get Node.js, go to nodejs.org.
+```
 
-## Development
+## Starting Application
 ```bash
 $ npm run install:packages
 $ npm run start
