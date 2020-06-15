@@ -9,6 +9,7 @@
     "build:client": "cd client && ng build --prod --sm=false --aot=true --output-path=../dist/client",
     "build:server": "cd server && cpx \"**\" ../dist/server",
     "build": "npm run build:client && npm run build:server",
+    "postinstall": "npm run install:packages",
     "start": "concurrently --kill-others \"cd client && ng serve --disable-host-check --proxy-config proxy.conf.json\" \"cd server && nodemon ./bin/www\" "
   },
   "author": "George Tsopouridis gtsopour@gmail.com",
@@ -17,5 +18,8 @@
     "concurrently": "*",
     "cpx": "*",
     "nodemon": "*"
+  },
+  "dependencies": {
+    "@angular/cli": "^9.1.8"
   }
 }

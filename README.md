@@ -11,6 +11,11 @@
     To get Node.js, go to nodejs.org.
 ```
 
+```angular2
+    Install angular client using 
+    npm install -g @angular/cli
+```
+
 ## Starting Application
 ```bash
 $ npm run install:packages
