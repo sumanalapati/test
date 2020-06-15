@@ -6,7 +6,7 @@
     "install:client": "cd client && npm install",
     "install:server": "cd server && npm install",
     "install:packages": "npm install && npm run install:client && npm run install:server",
-    "build:client": "cd client && ng build --prod --sm=false --aot=true --output-path=../dist/client",
+    "build:client": "cd client && ng build",
     "build:server": "cd server && cpx \"**\" ../dist/server",
     "build": "npm run build:client && npm run build:server",
     "postinstall": "npm run install:client && npm run install:server",

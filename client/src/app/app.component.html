@@ -12,12 +12,14 @@
     </mat-error>
   </mat-form-field>
 </form>
-
-<div *ngIf="results$">
-<div align="center" style="padding-bottom: 10px;">
+<div *ngIf="results$.length === 0" align="center">
+  No Matching DDN Found....
+</div>
+<div *ngIf="results$.length > 0">
+  <div align="center" style="padding-bottom: 10px;">
   Here's your DDN ........
 </div>
-<table mat-table [dataSource]="results$" class="mat-elevation-z8" align="center" width="30%">
+  <table mat-table [dataSource]="results$" class="mat-elevation-z8" align="center" width="30%">
   <ng-container matColumnDef="DDN_Lat">
     <th mat-header-cell *matHeaderCellDef> Latitute </th>
     <td mat-cell *matCellDef="let element"> {{element.DDN_Lat}} </td>
