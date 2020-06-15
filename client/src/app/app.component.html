@@ -1,9 +1,9 @@
 <mat-toolbar [classList]="'mat-toolbar mat-toolbar-single-row'">
   <span> Door Number Converter</span>
 </mat-toolbar>
-<div style="padding-top: 20px;">
-<form [formGroup]="myForm" (ngSubmit)="submitForm()" novalidate>
-  <mat-form-field>
+<div style="padding-top: 20px;" class="example-container">
+<form [formGroup]="myForm" (ngSubmit)="submitForm()" novalidate class="example-form">
+  <mat-form-field  appearance="fill" class="mat-form-field ng-tns-c60-0 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-fill mat-form-field-can-float mat-form-field-should-float">
     <input matInput placeholder="EDN" formControlName="edn">
     <mat-error *ngIf="errorHandling('edn', 'required')">
       You must provide a <strong>EDN</strong>
