@@ -10,7 +10,7 @@
     "cookie-parser": "*",
     "debug": "*",
     "express": "^4.17.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "morgan": "^1.10.0",
     "node-xlsx": "^0.15.0",
     "pug": "*",
